@@ -1,0 +1,55 @@
+{q1,}	a	{q1,}	
+{q1,}	b	{q2,q3,}	
+{q2,q3,}	a	{q1,q2,q3,}	
+{q2,q3,}	b	{q2,q3,}	
+{q1,q2,q3,}	a	{q1,q2,q3,}	
+{q1,q2,q3,}	b	{q2,q3,}	
+
+States of DFA:
+{q1,}	{q2,q3,}	{q1,q2,q3,}	
+ Alphabets:
+a	b	
+ Start State: 
+ q1
+Final states:
+{q2,q3,}		{q1,q2,q3,}		
+------Test 1 completed-----
+
+{q1,}	0	{q1,}	
+{q1,}	1	{q1,q2,}	
+{q1,q2,}	0	{q1,q3,}	
+{q1,q2,}	1	{q1,q2,q3,}	
+{q1,q3,}	0	{q1,}	
+{q1,q3,}	1	{q1,q2,}	
+{q1,q2,q3,}	0	{q1,q3,}	
+{q1,q2,q3,}	1	{q1,q2,q3,}	
+
+States of DFA:
+{q1,}	{q1,q2,}	{q1,q3,}	{q1,q2,q3,}	
+ Alphabets:
+0	1	
+ Start State: 
+ q1
+Final states:
+{q1,q3,}		{q1,q2,q3,}		
+------Test 2 completed-----
+
+{q1,}	a	{q2,q3,}	
+{q1,}	b	DEAD
+{q2,q3,}	a	{q2,q3,}	
+{q2,q3,}	b	{q1,q3,}	
+{q1,q3,}	a	{q2,q3,}	
+{q1,q3,}	b	{q1,q3,}	
+
+DEAD	a	DEAD	
+DEAD	b	DEAD	
+States of DFA:
+{q1,}	{q2,q3,}	{q1,q3,}		{DEAD}
+ Alphabets:
+a	b	
+ Start State: 
+ q1
+Final states:
+{q1,}		{q2,q3,}		{q1,q3,}		
+------Test 3 completed-----
+
